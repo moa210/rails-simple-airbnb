@@ -1,0 +1,10 @@
+<h1>TEST index</h1>
+<div class="container">
+
+<% @flats.each do |flat| %>
+<p><strong> <%= flat.name %> </strong> |
+<%= flat.address %>,</p>
+<div class="btn btn-secondary">
+<%= link_to 'Show', flat_path(flat) %></div>
+<% end %>
+</div>
